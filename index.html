@@ -1,56 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>HopeHands</title>
-  <style>
-    body {
-      font-family: Arial;
-      margin: 0;
-      background: #f5f7fa;
-      text-align: center;
-    }
-    header {
-      background: #b57edc;
-      color: white;
-      padding: 30px;
-    }
-    section {
-      padding: 20px;
-    }
-    .btn {
-      background: #b57edc;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HopeHands</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6fb;
+  color: #333;
+}
+
+/* NAVBAR */
+nav {
+  background: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav h1 {
+  color: #b57edc;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 15px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(to right, #b57edc, #d8b4f8);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: white;
+  color: #b57edc;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* SECTIONS */
+.section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer {
+  background: #b57edc;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+</style>
 </head>
 
 <body>
 
-<header>
+<!-- NAVBAR -->
+<nav>
   <h1>HopeHands 🎗</h1>
-  <p>Awareness Today. Cure Tomorrow.</p>
-</header>
+  <div>
+    <a href="#">Home</a>
+    <a href="#">Mission</a>
+    <a href="#">Impact</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>
 
-<section>
+<!-- HERO -->
+<section class="hero">
+  <h2>Awareness Today. Cure Tomorrow.</h2>
+  <p>A student-led movement raising awareness and support for cancer.</p>
+  <a class="btn" href="#">Join Us</a>
+</section>
+
+<!-- MISSION -->
+<section class="section">
   <h2>Our Mission</h2>
   <p>
-    HopeHands is a student-led initiative raising awareness and support
-    for people affected by cancer.
+    HopeHands is dedicated to spreading awareness, inspiring hope,
+    and supporting those affected by cancer through student-led initiatives.
   </p>
 </section>
 
-<section>
+<!-- WHAT WE DO -->
+<section class="section">
   <h2>What We Do</h2>
-  <p>Fundraisers • Awareness Campaigns • Community Events</p>
+  <div class="cards">
+    <div class="card">
+      <h3>🎗 Awareness</h3>
+      <p>Educating students about cancer and health.</p>
+    </div>
+    <div class="card">
+      <h3>💸 Fundraising</h3>
+      <p>Raising money through events and campaigns.</p>
+    </div>
+    <div class="card">
+      <h3>🤝 Community</h3>
+      <p>Bringing people together to make a difference.</p>
+    </div>
+  </div>
 </section>
 
-<section>
-  <h2>Get Involved</h2>
-  <a class="btn" href="#">Join Us</a>
+<!-- IMPACT -->
+<section class="section">
+  <h2>Our Impact</h2>
+  <p>Coming soon: funds raised, events hosted, and lives impacted.</p>
 </section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 HopeHands | Built with purpose 💜</p>
+</footer>
 
 </body>
 </html>
